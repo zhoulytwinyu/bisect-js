@@ -1,4 +1,8 @@
 export function bisect_left(sorted,target) {
+  /*
+   * Find the index s.t. sorted[index]<target and sorted[index+1]>=target
+   * ([1,2,3],2) returns 0
+   */
   let l = 0;
   let r = sorted.length-1;
   let m = null;
@@ -15,6 +19,10 @@ export function bisect_left(sorted,target) {
 }
 
 export function bisect_right(sorted,target) {
+  /*
+   * Find the index s.t. sorted[index]>target and sorted[index-1]<=target
+   * ([1,2,3],2) returns 0
+   */
   let l = 0;
   let r = sorted.length-1;
   let m = null;
