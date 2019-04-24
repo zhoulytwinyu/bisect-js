@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "binary selection",
   "author": "Lingyu Zhou",
-  "main": "dist/index.js",
+  "main": "dist/bisect.js",
+  "module": "dist/bisect.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zhoulytwinyu/bisect-js.git"
@@ -27,7 +28,6 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-stage-0": "^6.24.1"
   },
-  "module": "dist/bisect.js",
   "babel": {
     "presets": [
       "env",
