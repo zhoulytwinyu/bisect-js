@@ -3,19 +3,40 @@
   "version": "1.0.0",
   "description": "binary selection",
   "author": "Lingyu Zhou",
-  "main": "src/bisect.js",
+  "main": "dist/index.js",
   "repository": {
     "type": "git",
-    "url": "zhoulytwinyu/bisect-js"
+    "url": "git+https://github.com/zhoulytwinyu/bisect-js.git"
+  },
+  "scripts": {
+    "dist": "export NODE_ENV=production && rm -rf dist && mkdir dist && npx babel src --out-dir dist --copy-files"
   },
   "keywords": [
     "bisect",
     "js",
     "javascript"
   ],
-  "license": "GPLV3",
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1"
+  },
+  "module": "dist/index.js",
+  "babel": {
+    "presets": [
+      "env",
+      "stage-0"
+    ]
+  },
   "bugs": {
     "url": "https://github.com/zhoulytwinyu/bisect-js/issues"
   },
-  "homepage": "https://github.com/zhoulytwinyu/bisect-js#readme"
+  "homepage": "https://github.com/zhoulytwinyu/bisect-js#readme",
+  "license": "MIT"
 }
