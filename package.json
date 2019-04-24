@@ -2,21 +2,18 @@
   "name": "bisect",
   "version": "1.0.0",
   "description": "binary selection",
-  "main": "bisect.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "author": "Lingyu Zhou",
+  "main": "src/bisect.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zhoulytwinyu/bisect-js.git"
+    "url": "zhoulytwinyu/bisect-js"
   },
   "keywords": [
     "bisect",
     "js",
     "javascript"
   ],
-  "author": "Lingyu Zhou",
-  "license": "ISC",
+  "license": "GPLV3",
   "bugs": {
     "url": "https://github.com/zhoulytwinyu/bisect-js/issues"
   },
