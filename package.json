@@ -1,10 +1,10 @@
 {
   "name": "bisect",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "binary selection",
   "author": "Lingyu Zhou",
-  "main": "dist/bisect.js",
-  "module": "dist/bisect.js",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zhoulytwinyu/bisect-js.git"
@@ -12,26 +12,26 @@
   "scripts": {
     "dist": "export NODE_ENV=production && rm -rf dist && mkdir dist && npx babel src --out-dir dist --copy-files"
   },
-  "keywords": [
-    "bisect",
-    "js",
-    "javascript"
-  ],
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ],
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-stage-0": "^6.24.1"
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
   "babel": {
     "presets": [
-      "env",
-      "stage-0"
+      "@babel/preset-env"
     ]
   },
   "bugs": {
