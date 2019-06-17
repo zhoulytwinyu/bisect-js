@@ -1,6 +1,6 @@
 {
   "name": "bisect",
-  "version": "1.0.1",
+  "version": "0.1.0",
   "description": "binary selection",
   "author": "Lingyu Zhou",
   "main": "dist/index.js",
